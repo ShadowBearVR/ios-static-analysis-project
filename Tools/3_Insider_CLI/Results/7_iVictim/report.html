@@ -1,0 +1,272 @@
+
+	<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title>Report</title>
+    <link href='./style.css' rel='stylesheet' >
+    <link href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap' rel='stylesheet'>
+</head>
+<style>
+    body {
+        font-family: 'Inconsolata', monospace;
+        font-size: 13px;
+    }
+</style>
+<body>
+<div class='container' style='border: rgba(0,0,0,.1) 1px solid'>
+    <div class='row'>
+        <div class='col-4'><img src='https://insidersec.io/wp-content/uploads/2020/03/insider-novo-logo.png' alt=''
+                                class='img-fluid' style='margin-bottom: 20px'></div>
+    </div>
+	<div class='row'>
+		<div class='col-12'>
+			<table>
+				<tr><td>App name</td><td>&nbsp; iVictim</td></tr>
+			</table>
+		</div>
+	</div>
+	<hr>
+	<div class='row'>
+        <div class='col-12'>
+            <h6>Score Security 2/100 </h6>
+	</div>
+	<hr>
+
+
+</div>
+	<hr>
+	<div class='row'>
+		<div class='col-12'>
+			<h7>Resume of Vulnerabilities</h7>
+			<table>
+				<tr><td>None</td><td>&nbsp; 5</td></tr>
+				<tr><td>Low</td><td>&nbsp; 0</td></tr>
+				<tr><td>Medium</td><td>&nbsp; 0</td></tr>
+				<tr><td>High</td><td>&nbsp; 3</td></tr>
+				<tr><td>Critical</td><td>&nbsp; 2</td></tr>
+				<tr><td>Total</td><td>&nbsp; 10</td></tr>
+			</table>
+		</div>
+	</div>
+	<hr>
+	<div class='row'>
+		<div class='col-12'>
+				You are using the Insider open source version. If you like the product and want more features, visit <a href='http://insidersec.io'>http://insidersec.io</a> and get to know our enterprise version.<br><br>
+
+If you are a developer, then you can contribute to the improvement of the software while using an open source version
+		</div>
+	</div>
+	<hr>
+    <div class='row'>
+    </div>
+    
+        <div class='row'>
+            <div class='col-12'>
+                <h6>Libraries</h6>
+                <div class='table-responsive'>
+                    <table class='table table-sm'>
+                        <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Version</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr class='user-select-all' >
+                                <td>RealmSwift</td>
+                                <td>latest</td>
+                            </tr>
+                        
+                            <tr class='user-select-all' >
+                                <td>Locksmith</td>
+                                <td>latest</td>
+                            </tr>
+                        
+                            <tr class='user-select-all' >
+                                <td>CryptoSwift</td>
+                                <td>latest</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    
+
+    
+    <div class='row'>
+        <div class='col-12'>
+            <h6>Vulnerabilities</h6>
+            <div class=''>
+                <table class='table table-sm' style='table-layout:fixed;'>
+                    <tbody>
+
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>AppDelegate.swift (81:13)<br>
+                                    <b>VulnerabilityID :</b>338aae63a2a1f06e1f45f7b8fdcc1a1b<br>
+                                    <b>Method: </b>NSLog(&#34;Unresolved error \(wrappedError), \(wrappedError.userInfo)&#34;)<br>
+                                    <b>Description: </b>The binary can use the NSLog function for logging. Confidential information should never be recorded.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Application/AppDelegate.swift (81:13)<br>
+                                    <b>Recomendation: </b>Prevent sensitive data from being logged into production.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>AppDelegate.swift (106:17)<br>
+                                    <b>VulnerabilityID :</b>2aca6d2556622435ddbd94354a548f23<br>
+                                    <b>Method: </b>NSLog(&#34;Unresolved error \(nserror), \(nserror.userInfo)&#34;)<br>
+                                    <b>Description: </b>The binary can use the NSLog function for logging. Confidential information should never be recorded.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Application/AppDelegate.swift (106:17)<br>
+                                    <b>Recomendation: </b>Prevent sensitive data from being logged into production.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>9.8<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>PasteboardViewController.swift (26:31)<br>
+                                    <b>VulnerabilityID :</b>59f49dbe459e0a435047b8feb5fa52de<br>
+                                    <b>Method: </b>let pasteboardItems = UIPasteboard.general.items<br>
+                                    <b>Description: </b>The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/Pasteboard/PasteboardViewController.swift (26:31)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>9.8<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>PasteboardViewController.swift (36:9)<br>
+                                    <b>VulnerabilityID :</b>754c5a0eca93649ab15a01cf5dad083b<br>
+                                    <b>Method: </b>UIPasteboard.general.items = []<br>
+                                    <b>Description: </b>The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/Pasteboard/PasteboardViewController.swift (36:9)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>8.8<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeWebViewController.swift (46:17)<br>
+                                    <b>VulnerabilityID :</b>393ccdda923479e40b60e581e721745e<br>
+                                    <b>Method: </b>webView.loadHTMLString(textField.text!, baseURL: nil)<br>
+                                    <b>Description: </b>User input not sanitized in &#39;loadHTMLString&#39; can result in an injection of JavaScript in the context of your application, allowing access to private data.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/Safe web view/SafeWebViewController.swift (46:17)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SecurityManager.m (48:60)<br>
+                                    <b>VulnerabilityID :</b>f75e015a0b330064103cc0da133467ec<br>
+                                    <b>Method: </b>if ([[NSFileManager defaultManager] fileExistsAtPath:@&#34;/Applications/Cydia.app&#34;]){<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/SecurityManager.m (48:60)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SecurityManager.m (50:65)<br>
+                                    <b>VulnerabilityID :</b>41f940bcad9022f860f7cf2dff424293<br>
+                                    <b>Method: </b>}else if([[NSFileManager defaultManager] fileExistsAtPath:@&#34;/Library/MobileSubstrate/MobileSubstrate.dylib&#34;]){<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/SecurityManager.m (50:65)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SecurityManager.m (54:65)<br>
+                                    <b>VulnerabilityID :</b>f064458d072a88cd67e12479bc957840<br>
+                                    <b>Method: </b>}else if([[NSFileManager defaultManager] fileExistsAtPath:@&#34;/usr/sbin/sshd&#34;]){<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/SecurityManager.m (54:65)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SecurityManager.m (56:65)<br>
+                                    <b>VulnerabilityID :</b>6b4cd3dc2e9acf583c2fdda3f782748f<br>
+                                    <b>Method: </b>}else if([[NSFileManager defaultManager] fileExistsAtPath:@&#34;/etc/apt&#34;]){<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/SecurityManager.m (56:65)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SecurityManager.m (71:77)<br>
+                                    <b>VulnerabilityID :</b>73519fa91a57ace32b52f2034c14f077<br>
+                                    <b>Method: </b>if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@&#34;cydia://package/com.example.package&#34;]]){<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>iVictim/iVictim/Modules/Main/SecurityManager.m (71:77)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="row" style="border-top: #dee2e6 1px solid;padding-top: 10px;">
+        <div class="col-12">
+            <p>Copyright 2020 insidersec.io</p>
+
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

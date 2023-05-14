@@ -1,0 +1,2022 @@
+
+	<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title>Report</title>
+    <link href='./style.css' rel='stylesheet' >
+    <link href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap' rel='stylesheet'>
+</head>
+<style>
+    body {
+        font-family: 'Inconsolata', monospace;
+        font-size: 13px;
+    }
+</style>
+<body>
+<div class='container' style='border: rgba(0,0,0,.1) 1px solid'>
+    <div class='row'>
+        <div class='col-4'><img src='https://insidersec.io/wp-content/uploads/2020/03/insider-novo-logo.png' alt=''
+                                class='img-fluid' style='margin-bottom: 20px'></div>
+    </div>
+	<div class='row'>
+		<div class='col-12'>
+			<table>
+				<tr><td>App name</td><td>&nbsp; Pods</td></tr>
+			</table>
+		</div>
+	</div>
+	<hr>
+	<div class='row'>
+        <div class='col-12'>
+            <h6>Score Security 2/100 </h6>
+	</div>
+	<hr>
+
+
+</div>
+	<hr>
+	<div class='row'>
+		<div class='col-12'>
+			<h7>Resume of Vulnerabilities</h7>
+			<table>
+				<tr><td>None</td><td>&nbsp; 11</td></tr>
+				<tr><td>Low</td><td>&nbsp; 0</td></tr>
+				<tr><td>Medium</td><td>&nbsp; 26</td></tr>
+				<tr><td>High</td><td>&nbsp; 97</td></tr>
+				<tr><td>Critical</td><td>&nbsp; 1</td></tr>
+				<tr><td>Total</td><td>&nbsp; 135</td></tr>
+			</table>
+		</div>
+	</div>
+	<hr>
+	<div class='row'>
+		<div class='col-12'>
+				You are using the Insider open source version. If you like the product and want more features, visit <a href='http://insidersec.io'>http://insidersec.io</a> and get to know our enterprise version.<br><br>
+
+If you are a developer, then you can contribute to the improvement of the software while using an open source version
+		</div>
+	</div>
+	<hr>
+    <div class='row'>
+    </div>
+    
+        <div class='row'>
+            <div class='col-12'>
+                <h6>Libraries</h6>
+                <div class='table-responsive'>
+                    <table class='table table-sm'>
+                        <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Version</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr class='user-select-all' >
+                                <td>Alamofire</td>
+                                <td>4.7</td>
+                            </tr>
+                        
+                            <tr class='user-select-all' >
+                                <td>KeychainAccess</td>
+                                <td>latest</td>
+                            </tr>
+                        
+                            <tr class='user-select-all' >
+                                <td>CryptoSwift</td>
+                                <td>latest</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    
+
+    
+    <div class='row'>
+        <div class='col-12'>
+            <h6>Vulnerabilities</h6>
+            <div class=''>
+                <table class='table table-sm' style='table-layout:fixed;'>
+                    <tbody>
+
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>DB.php (113:14)<br>
+                                    <b>VulnerabilityID :</b>450714a08d4b2403427e3dbaa4c9b60a<br>
+                                    <b>Method: </b>* $dsn = &#39;driver://username:password@hostname/database&#39;;<br>
+                                    <b>Description: </b>Password in URL. File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/src/api/system/database/DB.php (113:14)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the git code or repository, an attacker could decompile the application and obtain the credential. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>postgre_driver.php (129:6)<br>
+                                    <b>VulnerabilityID :</b>c3b13329d0ac7af53640708e3d8c7beb<br>
+                                    <b>Method: </b>* postgre://username:password@localhost:5432/database?connect_timeout=5&amp;sslmode=1<br>
+                                    <b>Description: </b>Password in URL. File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/src/api/system/database/drivers/postgre/postgre_driver.php (129:6)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the git code or repository, an attacker could decompile the application and obtain the credential. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>postgre_driver.php (120:47)<br>
+                                    <b>VulnerabilityID :</b>5cf64a491b290651cf629f8f8de789fb<br>
+                                    <b>Method: </b>$this-&gt;password === NULL OR $this-&gt;dsn .= &#34;password=&#39;&#34;.$this-&gt;password.&#34;&#39; &#34;;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/src/api/system/database/drivers/postgre/postgre_driver.php (120:47)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Ftp.php (70:10)<br>
+                                    <b>VulnerabilityID :</b>8e607d43c38433b1ce7b84c585c7aa32<br>
+                                    <b>Method: </b>public $password = &#39;&#39;;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/src/api/system/libraries/Ftp.php (70:10)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>500.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>3ba3ed3653ac539bb7f86f91630dee69<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>applyLoan.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>bd7c9b67ccf9cbda665c694ed612c964<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/applyLoan.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>applyLoan.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>bd7c9b67ccf9cbda665c694ed612c964<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/applyLoan.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>business_plan.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>5e5ee40a217e36ce2c26aa21fe13afed<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/business_plan.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>business_plan.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>5e5ee40a217e36ce2c26aa21fe13afed<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/business_plan.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>businesswoman.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>293d4987d8d530314ec8f8131f6fce0c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>businesswoman.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>293d4987d8d530314ec8f8131f6fce0c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>businesswoman.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>293d4987d8d530314ec8f8131f6fce0c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>businesswoman.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>293d4987d8d530314ec8f8131f6fce0c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>changePassword.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7fb8ad32f1d1438ebbaca50bc50693b4<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>data_points.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6a441cba7c657c4a7bcfb451c6d4179b<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>hero-images.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>ac4d59499762c8af86f7ca950959b806<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>image_post.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6d2123288563b7d230be2494f574663d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>image_post.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6d2123288563b7d230be2494f574663d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>image_post.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>6d2123288563b7d230be2494f574663d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>monitor.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>c6b00aa184ee7c6a4646a0a2015a861d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>monitor.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>c6b00aa184ee7c6a4646a0a2015a861d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>monitor.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>c6b00aa184ee7c6a4646a0a2015a861d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>monitor.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>c6b00aa184ee7c6a4646a0a2015a861d<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>personal_settings.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>d37105580e6a537c9f76937885b5667c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/personal_settings.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>personal_settings.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>d37105580e6a537c9f76937885b5667c<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/personal_settings.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>posting_photo.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>fada59bd6963c4b35b7931426ff8cfa9<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>posting_photo.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>fada59bd6963c4b35b7931426ff8cfa9<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>posting_photo.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>fada59bd6963c4b35b7931426ff8cfa9<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>posting_photo.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>fada59bd6963c4b35b7931426ff8cfa9<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>posting_photo.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>fada59bd6963c4b35b7931426ff8cfa9<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>powerful.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7b7a0afbf6828cfdd29bb57696139269<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/powerful.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>powerful.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>7b7a0afbf6828cfdd29bb57696139269<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/powerful.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>projections.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>b25a3927dd3e20e3c2c4546091b899c1<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>projections.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>b25a3927dd3e20e3c2c4546091b899c1<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>projections.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>b25a3927dd3e20e3c2c4546091b899c1<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>social_share.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>5acd49a4ffa74601239b43867f2b2730<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/social_share.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>social_share.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>5acd49a4ffa74601239b43867f2b2730<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/social_share.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>tables.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>d04601d7ab49025a4f9fe9cae4e5bca5<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/tables.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>travel_booking.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>657c4d845486a9e91706155f93c5859a<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>travel_booking.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>657c4d845486a9e91706155f93c5859a<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>travel_booking.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>657c4d845486a9e91706155f93c5859a<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>travel_booking.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>657c4d845486a9e91706155f93c5859a<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>travel_booking.svg (0:0)<br>
+                                    <b>VulnerabilityID :</b>657c4d845486a9e91706155f93c5859a<br>
+                                    <b>Method: </b><br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (36:468)<br>
+                                    <b>VulnerabilityID :</b>a5b612109a20a58853f1a034976d6590<br>
+                                    <b>Method: </b>d=&#34;M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:468)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (36:488)<br>
+                                    <b>VulnerabilityID :</b>b4f61ffe2f0ec087451add305a0bfe61<br>
+                                    <b>Method: </b>d=&#34;M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:488)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (36:509)<br>
+                                    <b>VulnerabilityID :</b>41979ca6031d215a2ab1fe78bd08954d<br>
+                                    <b>Method: </b>d=&#34;M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:509)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (36:534)<br>
+                                    <b>VulnerabilityID :</b>64fe8fcb33ca5165003120e3d13ebc17<br>
+                                    <b>Method: </b>d=&#34;M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:534)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (36:556)<br>
+                                    <b>VulnerabilityID :</b>089894ed1bf90cd1f1e5c1a63845f578<br>
+                                    <b>Method: </b>d=&#34;M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:556)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (60:307)<br>
+                                    <b>VulnerabilityID :</b>41e0c2e57afccd9c63439e9955e294cf<br>
+                                    <b>Method: </b>d=&#34;M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:307)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (60:328)<br>
+                                    <b>VulnerabilityID :</b>000771d8e045936f2e0435f4188148b5<br>
+                                    <b>Method: </b>d=&#34;M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:328)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (60:347)<br>
+                                    <b>VulnerabilityID :</b>4b015f4b2d1a95af2b940dbec70957f0<br>
+                                    <b>Method: </b>d=&#34;M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:347)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (60:410)<br>
+                                    <b>VulnerabilityID :</b>5abe37c84cb7887c34bc86b2702d6724<br>
+                                    <b>Method: </b>d=&#34;M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:410)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SafeSecurityLogo.tsx (96:379)<br>
+                                    <b>VulnerabilityID :</b>e5558449f215a30b53d00c90b77750e1<br>
+                                    <b>Method: </b>d=&#34;M68.21 16.407a2.001 2.001 0 011.127-.302 3.97 3.97 0 011.302.238 8.878 8.878 0 011.382.604l.89-1.78a7.576 7.576 0 00-1.589-.81 6.702 6.702 0 00-2.318-.333 4.415 4.415 0 00-1.938.493 3.494 3.494 0 00-1.302 1.19 3.462 3.462 0 00-.445 1.795 3.081 3.081 0 00.302 1.446 3.288 3.288 0 00.825.984 6.353 6.353 0 001.096.667l1.128.477a4.606 4.606 0 01.842.413 2.414 2.414 0 01.635.54.953.953 0 01.238.635 1.096 1.096 0 01-.286.81 1.588 1.588 0 01-.714.413 2.986 2.986 0 01-.842.111 3.256 3.256 0 01-.905-.127 6.258 6.258 0 01-1.001-.35 8.513 8.513 0 01-.905-.54l-1.033 1.811a7.56 7.56 0 001.303.731 8.942 8.942 0 001.366.413 8.465 8.465 0 001.397.127 4.765 4.765 0 002.208-.46 3.669 3.669 0 001.382-1.255 3.32 3.32 0 00.46-1.684 3.732 3.732 0 00-.238-1.43 2.732 2.732 0 00-.651-.984 3.272 3.272 0 00-.905-.651 7.306 7.306 0 00-1.017-.477 8.386 8.386 0 01-1.096-.46 3.176 3.176 0 01-.857-.588 1.016 1.016 0 01-.318-.746 1.064 1.064 0 01.476-.921z&#34;<br>
+                                    <b>Description: </b>Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (96:379)<br>
+                                    <b>Recomendation: </b>There are ‘Secrets Management’ solutions that can be used to store secrets.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>handleForgotPasswordGetOTPThunk.tsx (32:13)<br>
+                                    <b>VulnerabilityID :</b>da94f53065517311a2ffc1ccc3e1351e<br>
+                                    <b>Method: </b>var secret = &#34;9bbc0d79e686e847bc305c9bd4cc2ea6&#34;;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/thunks/Authentication/ForgotPassword/handleForgotPasswordGetOTPThunk.tsx (32:13)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>handleGetOTPThunk.tsx (31:13)<br>
+                                    <b>VulnerabilityID :</b>97906ae9abc3953017c4fd52b848720a<br>
+                                    <b>Method: </b>var secret = &#34;9bbc0d79e686e847bc305c9bd4cc2ea6&#34;;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/Backend/web/src/app/thunks/OTP/handleGetOTPThunk.tsx (31:13)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Array&#43;Extension.swift (97:17)<br>
+                                    <b>VulnerabilityID :</b>bbbd235d14924e3d9e4437d7f1062aa2<br>
+                                    <b>Method: </b>public func sha1() -&gt; [Element] {<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Array&#43;Extension.swift (97:17)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Array&#43;Extension.swift (98:23)<br>
+                                    <b>VulnerabilityID :</b>5871102e651d6fa9487005c0af78b611<br>
+                                    <b>Method: </b>return Digest.sha1(self)<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Array&#43;Extension.swift (98:23)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Digest.swift (31:24)<br>
+                                    <b>VulnerabilityID :</b>13b5308a3469114abfab68f0398f6765<br>
+                                    <b>Method: </b>public static func sha1(_ bytes: Array&lt;UInt8&gt;) -&gt; Array&lt;UInt8&gt; {<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Digest.swift (31:24)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Digest.swift (32:16)<br>
+                                    <b>VulnerabilityID :</b>28c60fa874967d5c32c2249d0839b3f8<br>
+                                    <b>Method: </b>return SHA1().calculate(for: bytes)<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Digest.swift (32:16)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Data&#43;Extension.swift (34:17)<br>
+                                    <b>VulnerabilityID :</b>ae92ee59d0a63103e8af98f9ea7f4d70<br>
+                                    <b>Method: </b>public func sha1() -&gt; Data {<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data&#43;Extension.swift (34:17)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Data&#43;Extension.swift (35:29)<br>
+                                    <b>VulnerabilityID :</b>6b302c295007d4dfefcb291bd62c166f<br>
+                                    <b>Method: </b>return Data( Digest.sha1(bytes))<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data&#43;Extension.swift (35:29)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>HMAC.swift (43:31)<br>
+                                    <b>VulnerabilityID :</b>0c6b4bb549877c09552111e6ae9589b1<br>
+                                    <b>Method: </b>return Digest.sha1(bytes)<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/HMAC.swift (43:31)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>PBKDF1.swift (43:35)<br>
+                                    <b>VulnerabilityID :</b>734ec5ddc1a81a14558cb5b5f8e28945<br>
+                                    <b>Method: </b>return Digest.sha1(bytes)<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PBKDF1.swift (43:35)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Scrypt.swift (87:9)<br>
+                                    <b>VulnerabilityID :</b>fc79e3991dcab6edb77bc0f2c9dd5fca<br>
+                                    <b>Method: </b>barray.withUnsafeBytes { p in<br>
+                                    <b>Description: </b>Using this implementation of &#39;.withUnsafeBytes&#39; can lead to the compiler&#39;s decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Scrypt.swift (87:9)<br>
+                                    <b>Recomendation: </b>Whenever possible, avoid using buffers or memory pointers that do not have a valid size.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>String&#43;Extension.swift (26:17)<br>
+                                    <b>VulnerabilityID :</b>4b5bfab93a37ce5dcf150c14554c1cfe<br>
+                                    <b>Method: </b>public func sha1() -&gt; String {<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/String&#43;Extension.swift (26:17)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5.9<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>String&#43;Extension.swift (27:22)<br>
+                                    <b>VulnerabilityID :</b>f657fc79b0dc5f1d22cb5e3ce0d1a1a6<br>
+                                    <b>Method: </b>return bytes.sha1().toHexString()<br>
+                                    <b>Description: </b>SHA1 is a weak hash, which can generate repeated hashes.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/String&#43;Extension.swift (27:22)<br>
+                                    <b>Recomendation: </b>When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (625:26)<br>
+                                    <b>VulnerabilityID :</b>5f8d25c67fc05c53d7c01bd168944c6d<br>
+                                    <b>Method: </b>status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (625:26)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (631:22)<br>
+                                    <b>VulnerabilityID :</b>128a59b3647d0a5ae72465ba9f0cba81<br>
+                                    <b>Method: </b>status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (631:22)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (645:22)<br>
+                                    <b>VulnerabilityID :</b>dc5b8bde3d4b7569e4ee68203d45a69c<br>
+                                    <b>Method: </b>status = SecItemAdd(attributes as CFDictionary, nil)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (645:22)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1593:25)<br>
+                                    <b>VulnerabilityID :</b>5db73e56d9569c07052c28ad84e3c8ff<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleWhenUnlocked):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1593:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1595:25)<br>
+                                    <b>VulnerabilityID :</b>78c3d92f55f60f0e7a31cfa23c602df0<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleAfterFirstUnlock):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1595:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1601:25)<br>
+                                    <b>VulnerabilityID :</b>e8e1db90f08aaa56c4a6e36db236ae11<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1601:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1603:25)<br>
+                                    <b>VulnerabilityID :</b>a9c89e20678b1832ccd8729588e8ddba<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1603:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1612:25)<br>
+                                    <b>VulnerabilityID :</b>f98be4ced40e8da5c4d7a0ab9d5361b8<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleWhenUnlocked):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1612:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1614:25)<br>
+                                    <b>VulnerabilityID :</b>7ea6ae8e8409954cff37db54c647bff9<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleAfterFirstUnlock):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1614:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1618:25)<br>
+                                    <b>VulnerabilityID :</b>c28685d7264238f844eb0c828e7ae319<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1618:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1620:25)<br>
+                                    <b>VulnerabilityID :</b>9d7122987a52fe0570d3d4e391dd8c55<br>
+                                    <b>Method: </b>case String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly):<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1620:25)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1633:27)<br>
+                                    <b>VulnerabilityID :</b>f81d47d500ac2e8707348a52b28f6968<br>
+                                    <b>Method: </b>return String(kSecAttrAccessibleWhenUnlocked)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1633:27)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1635:27)<br>
+                                    <b>VulnerabilityID :</b>faf7d8aed3bb4d17fa3607868463b24a<br>
+                                    <b>Method: </b>return String(kSecAttrAccessibleAfterFirstUnlock)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1635:27)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1645:27)<br>
+                                    <b>VulnerabilityID :</b>e6ad76d68255951e764f0690c8f959be<br>
+                                    <b>Method: </b>return String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1645:27)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>5<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>Keychain.swift (1647:27)<br>
+                                    <b>VulnerabilityID :</b>cd150e0e2e06fbf93f56e925abf10ae1<br>
+                                    <b>Method: </b>return String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly)<br>
+                                    <b>Description: </b>Local File I/O Operations.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1647:27)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>JSONHelpers.swift (22:16)<br>
+                                    <b>VulnerabilityID :</b>993ce2a6ee571200580047aa967d9bbb<br>
+                                    <b>Method: </b>static let token = &#34;token&#34;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (22:16)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>JSONHelpers.swift (23:16)<br>
+                                    <b>VulnerabilityID :</b>50a47e3116764099fda11a7fa0cdfee6<br>
+                                    <b>Method: </b>static let passwd = &#34;passwd&#34;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (23:16)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>JSONHelpers.swift (30:16)<br>
+                                    <b>VulnerabilityID :</b>cce1855df3318c211baad95720f5afca<br>
+                                    <b>Method: </b>static let password = &#34;passwd&#34;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (30:16)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>JSONHelpers.swift (45:20)<br>
+                                    <b>VulnerabilityID :</b>ed30aeb38df35e48cbfe41c4b003ecb1<br>
+                                    <b>Method: </b>static let old_pass = &#34;old_pass&#34;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (45:20)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>7.4<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>JSONHelpers.swift (46:20)<br>
+                                    <b>VulnerabilityID :</b>6994109ecb5e344ed41108aead08c884<br>
+                                    <b>Method: </b>static let new_pass = &#34;new_pass&#34;<br>
+                                    <b>Description: </b>File contains sensitive information written directly, such as usernames, passwords, keys, etc.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (46:20)<br>
+                                    <b>Recomendation: </b>Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (44:44)<br>
+                                    <b>VulnerabilityID :</b>44495e0044672de5ac3073d58e89d127<br>
+                                    <b>Method: </b>if fileManager.fileExists(atPath: &#34;/Applications/Cydia.app&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (44:44)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (54:27)<br>
+                                    <b>VulnerabilityID :</b>5080a9c6f726660f67d50d56dfab2cf4<br>
+                                    <b>Method: </b>if canOpen(path: &#34;/Applications/Cydia.app&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (54:27)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (45:45)<br>
+                                    <b>VulnerabilityID :</b>79d4ccb358de754c39a5f4882e9742e6<br>
+                                    <b>Method: </b>fileManager.fileExists(atPath: &#34;/Library/MobileSubstrate/MobileSubstrate.dylib&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (45:45)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (55:28)<br>
+                                    <b>VulnerabilityID :</b>d84253d16566bd13896917298919b378<br>
+                                    <b>Method: </b>canOpen(path: &#34;/Library/MobileSubstrate/MobileSubstrate.dylib&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (55:28)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (47:45)<br>
+                                    <b>VulnerabilityID :</b>ef224b1bac8164fbce7184e0070c845e<br>
+                                    <b>Method: </b>fileManager.fileExists(atPath: &#34;/usr/sbin/sshd&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (47:45)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (57:28)<br>
+                                    <b>VulnerabilityID :</b>32885ec6654570367ce55bb9f9ed925e<br>
+                                    <b>Method: </b>canOpen(path: &#34;/usr/sbin/sshd&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (57:28)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (48:45)<br>
+                                    <b>VulnerabilityID :</b>0792dd47aa3565a05a978ea7fa5a9b85<br>
+                                    <b>Method: </b>fileManager.fileExists(atPath: &#34;/etc/apt&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (48:45)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (58:28)<br>
+                                    <b>VulnerabilityID :</b>e980e594e55ad5563f6b8c5f431eca99<br>
+                                    <b>Method: </b>canOpen(path: &#34;/etc/apt&#34;) ||<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (58:28)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (32:51)<br>
+                                    <b>VulnerabilityID :</b>aff048b4d1dabcbcd8d36498682723e9<br>
+                                    <b>Method: </b>guard let cydiaUrlScheme = NSURL(string: &#34;cydia://package/lighttpd&#34;) else { return false }<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (32:51)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (50:45)<br>
+                                    <b>VulnerabilityID :</b>bcd5a71ecfa9700e403fe9c036f73d2c<br>
+                                    <b>Method: </b>fileManager.fileExists(atPath: &#34;/private/var/lib/apt&#34;) {<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (50:45)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>0<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>BankTransferVC3.swift (50:53)<br>
+                                    <b>VulnerabilityID :</b>a6bd1f1b1bde3c3a56580cb34d85dc02<br>
+                                    <b>Method: </b>fileManager.fileExists(atPath: &#34;/private/var/lib/apt&#34;) {<br>
+                                    <b>Description: </b>The application may contain Jailbreak detection mechanisms.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (50:53)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class='user-select-all'><p class='text-break'>
+                                    <b>CVSS: </b>9.8<br>
+									<b>Severity: </b><br>
+                                    <b>Class: </b>SignupSuccessMessageController.swift (36:12)<br>
+                                    <b>VulnerabilityID :</b>0784871fccfdf08023ef3bb401a61aec<br>
+                                    <b>Method: </b>UIPasteboard.general.string = id<br>
+                                    <b>Description: </b>The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.<br>
+                                    <b>ClassMessage: </b>UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Pre-Login/SignupSuccessMessageController.swift (36:12)<br>
+                                    <b>Recomendation: </b><br>
+                                </p>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="row" style="border-top: #dee2e6 1px solid;padding-top: 10px;">
+        <div class="col-12">
+            <p>Copyright 2020 insidersec.io</p>
+
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

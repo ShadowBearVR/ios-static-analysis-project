@@ -1,0 +1,60 @@
+{
+ "libraries": [
+  {
+   "name": "Alamofire",
+   "current": "5.4",
+   "source": "CocoaPod"
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "cvss": 4,
+   "cwe": "CWE-789",
+   "line": 57,
+   "class": "Crypto.swift (57:13)",
+   "vul_id": "d480b546323e1cbe25ffd10a5e80482f",
+   "method": "data.withUnsafeBytes { dataBytes in",
+   "column": 13,
+   "description": "Using this implementation of '.withUnsafeBytes' can lead to the compiler's decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer.",
+   "classMessage": "OVIA/Utils/Crypto.swift (57:13)",
+   "recomendation": "Whenever possible, avoid using buffers or memory pointers that do not have a valid size."
+  },
+  {
+   "cvss": 4,
+   "cwe": "CWE-789",
+   "line": 58,
+   "class": "Crypto.swift (58:17)",
+   "vul_id": "cfd0c0dc0c7ed28facce057dce044352",
+   "method": "iv.withUnsafeBytes { ivBytes in",
+   "column": 17,
+   "description": "Using this implementation of '.withUnsafeBytes' can lead to the compiler's decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer.",
+   "classMessage": "OVIA/Utils/Crypto.swift (58:17)",
+   "recomendation": "Whenever possible, avoid using buffers or memory pointers that do not have a valid size."
+  },
+  {
+   "cvss": 4,
+   "cwe": "CWE-789",
+   "line": 59,
+   "class": "Crypto.swift (59:21)",
+   "vul_id": "c0584f3281c2e48954b4bdcff046df94",
+   "method": "key.withUnsafeBytes { keyBytes in",
+   "column": 21,
+   "description": "Using this implementation of '.withUnsafeBytes' can lead to the compiler's decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer.",
+   "classMessage": "OVIA/Utils/Crypto.swift (59:21)",
+   "recomendation": "Whenever possible, avoid using buffers or memory pointers that do not have a valid size."
+  }
+ ],
+ "none": 0,
+ "low": 0,
+ "medium": 3,
+ "high": 0,
+ "critical": 0,
+ "total": 3,
+ "ios": {
+  "binName": "OVIA",
+  "averageCvss": 4,
+  "securityScore": 60,
+  "size": "760911 Bytes",
+  "numberOfLines": 16336
+ }
+}

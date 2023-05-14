@@ -1,0 +1,1399 @@
+{
+ "libraries": [
+  {
+   "name": "Alamofire",
+   "current": "4.7",
+   "source": "CocoaPod"
+  },
+  {
+   "name": "KeychainAccess",
+   "current": "latest",
+   "source": "CocoaPod"
+  },
+  {
+   "name": "CryptoSwift",
+   "current": "latest",
+   "source": "CocoaPod"
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 113,
+   "class": "DB.php (113:14)",
+   "vul_id": "450714a08d4b2403427e3dbaa4c9b60a",
+   "method": "* $dsn = 'driver://username:password@hostname/database';",
+   "column": 14,
+   "description": "Password in URL. File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/src/api/system/database/DB.php (113:14)",
+   "recomendation": "Credentials must not be stored in the git code or repository, an attacker could decompile the application and obtain the credential. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 129,
+   "class": "postgre_driver.php (129:6)",
+   "vul_id": "c3b13329d0ac7af53640708e3d8c7beb",
+   "method": "* postgre://username:password@localhost:5432/database?connect_timeout=5\u0026sslmode=1",
+   "column": 6,
+   "description": "Password in URL. File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/src/api/system/database/drivers/postgre/postgre_driver.php (129:6)",
+   "recomendation": "Credentials must not be stored in the git code or repository, an attacker could decompile the application and obtain the credential. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 120,
+   "class": "postgre_driver.php (120:47)",
+   "vul_id": "5cf64a491b290651cf629f8f8de789fb",
+   "method": "$this-\u003epassword === NULL OR $this-\u003edsn .= \"password='\".$this-\u003epassword.\"' \";",
+   "column": 47,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/src/api/system/database/drivers/postgre/postgre_driver.php (120:47)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 70,
+   "class": "Ftp.php (70:10)",
+   "vul_id": "8e607d43c38433b1ce7b84c585c7aa32",
+   "method": "public $password = '';",
+   "column": 10,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/src/api/system/libraries/Ftp.php (70:10)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "500.svg (0:0)",
+   "vul_id": "3ba3ed3653ac539bb7f86f91630dee69",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/500.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "applyLoan.svg (0:0)",
+   "vul_id": "bd7c9b67ccf9cbda665c694ed612c964",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/applyLoan.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "applyLoan.svg (0:0)",
+   "vul_id": "bd7c9b67ccf9cbda665c694ed612c964",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/applyLoan.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "business_plan.svg (0:0)",
+   "vul_id": "5e5ee40a217e36ce2c26aa21fe13afed",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/business_plan.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "business_plan.svg (0:0)",
+   "vul_id": "5e5ee40a217e36ce2c26aa21fe13afed",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/business_plan.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "businesswoman.svg (0:0)",
+   "vul_id": "293d4987d8d530314ec8f8131f6fce0c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "businesswoman.svg (0:0)",
+   "vul_id": "293d4987d8d530314ec8f8131f6fce0c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "businesswoman.svg (0:0)",
+   "vul_id": "293d4987d8d530314ec8f8131f6fce0c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "businesswoman.svg (0:0)",
+   "vul_id": "293d4987d8d530314ec8f8131f6fce0c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/businesswoman.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "changePassword.svg (0:0)",
+   "vul_id": "7fb8ad32f1d1438ebbaca50bc50693b4",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/changePassword.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "data_points.svg (0:0)",
+   "vul_id": "6a441cba7c657c4a7bcfb451c6d4179b",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/data_points.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "hero-images.svg (0:0)",
+   "vul_id": "ac4d59499762c8af86f7ca950959b806",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/hero-images.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "image_post.svg (0:0)",
+   "vul_id": "6d2123288563b7d230be2494f574663d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "image_post.svg (0:0)",
+   "vul_id": "6d2123288563b7d230be2494f574663d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "image_post.svg (0:0)",
+   "vul_id": "6d2123288563b7d230be2494f574663d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/image_post.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "monitor.svg (0:0)",
+   "vul_id": "c6b00aa184ee7c6a4646a0a2015a861d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "monitor.svg (0:0)",
+   "vul_id": "c6b00aa184ee7c6a4646a0a2015a861d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "monitor.svg (0:0)",
+   "vul_id": "c6b00aa184ee7c6a4646a0a2015a861d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "monitor.svg (0:0)",
+   "vul_id": "c6b00aa184ee7c6a4646a0a2015a861d",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/monitor.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "personal_settings.svg (0:0)",
+   "vul_id": "d37105580e6a537c9f76937885b5667c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/personal_settings.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "personal_settings.svg (0:0)",
+   "vul_id": "d37105580e6a537c9f76937885b5667c",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/personal_settings.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "posting_photo.svg (0:0)",
+   "vul_id": "fada59bd6963c4b35b7931426ff8cfa9",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "posting_photo.svg (0:0)",
+   "vul_id": "fada59bd6963c4b35b7931426ff8cfa9",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "posting_photo.svg (0:0)",
+   "vul_id": "fada59bd6963c4b35b7931426ff8cfa9",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "posting_photo.svg (0:0)",
+   "vul_id": "fada59bd6963c4b35b7931426ff8cfa9",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "posting_photo.svg (0:0)",
+   "vul_id": "fada59bd6963c4b35b7931426ff8cfa9",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/posting_photo.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "powerful.svg (0:0)",
+   "vul_id": "7b7a0afbf6828cfdd29bb57696139269",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/powerful.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "powerful.svg (0:0)",
+   "vul_id": "7b7a0afbf6828cfdd29bb57696139269",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/powerful.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "projections.svg (0:0)",
+   "vul_id": "b25a3927dd3e20e3c2c4546091b899c1",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "projections.svg (0:0)",
+   "vul_id": "b25a3927dd3e20e3c2c4546091b899c1",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "projections.svg (0:0)",
+   "vul_id": "b25a3927dd3e20e3c2c4546091b899c1",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/projections.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "social_share.svg (0:0)",
+   "vul_id": "5acd49a4ffa74601239b43867f2b2730",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/social_share.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "social_share.svg (0:0)",
+   "vul_id": "5acd49a4ffa74601239b43867f2b2730",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/social_share.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "tables.svg (0:0)",
+   "vul_id": "d04601d7ab49025a4f9fe9cae4e5bca5",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/tables.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "travel_booking.svg (0:0)",
+   "vul_id": "657c4d845486a9e91706155f93c5859a",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "travel_booking.svg (0:0)",
+   "vul_id": "657c4d845486a9e91706155f93c5859a",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "travel_booking.svg (0:0)",
+   "vul_id": "657c4d845486a9e91706155f93c5859a",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "travel_booking.svg (0:0)",
+   "vul_id": "657c4d845486a9e91706155f93c5859a",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "class": "travel_booking.svg (0:0)",
+   "vul_id": "657c4d845486a9e91706155f93c5859a",
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/assets/images/illustrations/travel_booking.svg (0:0)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SafeSecurityLogo.tsx (36:468)",
+   "vul_id": "a5b612109a20a58853f1a034976d6590",
+   "method": "d=\"M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z\"",
+   "column": 468,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:468)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SafeSecurityLogo.tsx (36:488)",
+   "vul_id": "b4f61ffe2f0ec087451add305a0bfe61",
+   "method": "d=\"M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z\"",
+   "column": 488,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:488)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SafeSecurityLogo.tsx (36:509)",
+   "vul_id": "41979ca6031d215a2ab1fe78bd08954d",
+   "method": "d=\"M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z\"",
+   "column": 509,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:509)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SafeSecurityLogo.tsx (36:534)",
+   "vul_id": "64fe8fcb33ca5165003120e3d13ebc17",
+   "method": "d=\"M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z\"",
+   "column": 534,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:534)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SafeSecurityLogo.tsx (36:556)",
+   "vul_id": "089894ed1bf90cd1f1e5c1a63845f578",
+   "method": "d=\"M67.24 34.02a1.048 1.048 0 00-.349-.238 2.16 2.16 0 00-.397-.175l-.46-.206a1.128 1.128 0 01-.35-.239.524.524 0 01-.127-.349.508.508 0 01.207-.429.858.858 0 01.555-.159 2.096 2.096 0 01.525.08 3.304 3.304 0 01.476.206l.222-.444a2.382 2.382 0 00-.571-.255 2.541 2.541 0 00-.731-.095 1.302 1.302 0 00-.667.159 1.08 1.08 0 00-.445.397 1.064 1.064 0 00-.174.588 1.175 1.175 0 00.11.492 1.445 1.445 0 00.287.334 3.176 3.176 0 00.397.222l.413.175a1.954 1.954 0 01.413.19.778.778 0 01.301.254.524.524 0 01.111.366.588.588 0 01-.127.413.826.826 0 01-.333.222.89.89 0 01-.397 0 1.7 1.7 0 01-.397 0l-.397-.159-.334-.19-.254.444a2.35 2.35 0 00.397.223 2.255 2.255 0 001.032.238 1.684 1.684 0 00.763-.159 1.175 1.175 0 00.476-.445 1.223 1.223 0 00.175-.62 1.286 1.286 0 00-.095-.523.953.953 0 00-.254-.318z\"",
+   "column": 556,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (36:556)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 60,
+   "class": "SafeSecurityLogo.tsx (60:307)",
+   "vul_id": "41e0c2e57afccd9c63439e9955e294cf",
+   "method": "d=\"M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z\"",
+   "column": 307,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:307)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 60,
+   "class": "SafeSecurityLogo.tsx (60:328)",
+   "vul_id": "000771d8e045936f2e0435f4188148b5",
+   "method": "d=\"M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z\"",
+   "column": 328,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:328)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 60,
+   "class": "SafeSecurityLogo.tsx (60:347)",
+   "vul_id": "4b015f4b2d1a95af2b940dbec70957f0",
+   "method": "d=\"M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z\"",
+   "column": 347,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:347)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 60,
+   "class": "SafeSecurityLogo.tsx (60:410)",
+   "vul_id": "5abe37c84cb7887c34bc86b2702d6724",
+   "method": "d=\"M110.631 34.036a1.27 1.27 0 00.238-.46 1.779 1.779 0 000-.493 1.382 1.382 0 00-.11-.588 1.191 1.191 0 00-.334-.413 1.255 1.255 0 00-.477-.254 1.954 1.954 0 00-.62-.095h-1.143v4.288h.588v-1.588h.778l1.08 1.588h.667l-1.08-1.747a1.493 1.493 0 00.413-.238zm-1.16-.111h-.619v-1.588h.667a.953.953 0 01.382.079.667.667 0 01.254.206.46.46 0 01.143.255.874.874 0 010 .27 1.588 1.588 0 010 .27.89.89 0 01-.143.27.937.937 0 01-.27.206 1.08 1.08 0 01-.413.032z\"",
+   "column": 410,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (60:410)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7,
+   "cwe": "CWE-200",
+   "line": 96,
+   "class": "SafeSecurityLogo.tsx (96:379)",
+   "vul_id": "e5558449f215a30b53d00c90b77750e1",
+   "method": "d=\"M68.21 16.407a2.001 2.001 0 011.127-.302 3.97 3.97 0 011.302.238 8.878 8.878 0 011.382.604l.89-1.78a7.576 7.576 0 00-1.589-.81 6.702 6.702 0 00-2.318-.333 4.415 4.415 0 00-1.938.493 3.494 3.494 0 00-1.302 1.19 3.462 3.462 0 00-.445 1.795 3.081 3.081 0 00.302 1.446 3.288 3.288 0 00.825.984 6.353 6.353 0 001.096.667l1.128.477a4.606 4.606 0 01.842.413 2.414 2.414 0 01.635.54.953.953 0 01.238.635 1.096 1.096 0 01-.286.81 1.588 1.588 0 01-.714.413 2.986 2.986 0 01-.842.111 3.256 3.256 0 01-.905-.127 6.258 6.258 0 01-1.001-.35 8.513 8.513 0 01-.905-.54l-1.033 1.811a7.56 7.56 0 001.303.731 8.942 8.942 0 001.366.413 8.465 8.465 0 001.397.127 4.765 4.765 0 002.208-.46 3.669 3.669 0 001.382-1.255 3.32 3.32 0 00.46-1.684 3.732 3.732 0 00-.238-1.43 2.732 2.732 0 00-.651-.984 3.272 3.272 0 00-.905-.651 7.306 7.306 0 00-1.017-.477 8.386 8.386 0 01-1.096-.46 3.176 3.176 0 01-.857-.588 1.016 1.016 0 01-.318-.746 1.064 1.064 0 01.476-.921z\"",
+   "column": 379,
+   "description": "Credentials must not be stored in the code, an attacker could decompile the application and obtain the credential.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/components/Sidebar/SafeSecurityLogo.tsx (96:379)",
+   "recomendation": "There are ‘Secrets Management’ solutions that can be used to store secrets."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 32,
+   "class": "handleForgotPasswordGetOTPThunk.tsx (32:13)",
+   "vul_id": "da94f53065517311a2ffc1ccc3e1351e",
+   "method": "var secret = \"9bbc0d79e686e847bc305c9bd4cc2ea6\";",
+   "column": 13,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/thunks/Authentication/ForgotPassword/handleForgotPasswordGetOTPThunk.tsx (32:13)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 31,
+   "class": "handleGetOTPThunk.tsx (31:13)",
+   "vul_id": "97906ae9abc3953017c4fd52b848720a",
+   "method": "var secret = \"9bbc0d79e686e847bc305c9bd4cc2ea6\";",
+   "column": 13,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/Backend/web/src/app/thunks/OTP/handleGetOTPThunk.tsx (31:13)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 97,
+   "class": "Array+Extension.swift (97:17)",
+   "vul_id": "bbbd235d14924e3d9e4437d7f1062aa2",
+   "method": "public func sha1() -\u003e [Element] {",
+   "column": 17,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Array+Extension.swift (97:17)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 98,
+   "class": "Array+Extension.swift (98:23)",
+   "vul_id": "5871102e651d6fa9487005c0af78b611",
+   "method": "return Digest.sha1(self)",
+   "column": 23,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Array+Extension.swift (98:23)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 31,
+   "class": "Digest.swift (31:24)",
+   "vul_id": "13b5308a3469114abfab68f0398f6765",
+   "method": "public static func sha1(_ bytes: Array\u003cUInt8\u003e) -\u003e Array\u003cUInt8\u003e {",
+   "column": 24,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Digest.swift (31:24)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 32,
+   "class": "Digest.swift (32:16)",
+   "vul_id": "28c60fa874967d5c32c2249d0839b3f8",
+   "method": "return SHA1().calculate(for: bytes)",
+   "column": 16,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Digest.swift (32:16)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 34,
+   "class": "Data+Extension.swift (34:17)",
+   "vul_id": "ae92ee59d0a63103e8af98f9ea7f4d70",
+   "method": "public func sha1() -\u003e Data {",
+   "column": 17,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift (34:17)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 35,
+   "class": "Data+Extension.swift (35:29)",
+   "vul_id": "6b302c295007d4dfefcb291bd62c166f",
+   "method": "return Data( Digest.sha1(bytes))",
+   "column": 29,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift (35:29)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 43,
+   "class": "HMAC.swift (43:31)",
+   "vul_id": "0c6b4bb549877c09552111e6ae9589b1",
+   "method": "return Digest.sha1(bytes)",
+   "column": 31,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/HMAC.swift (43:31)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 43,
+   "class": "PBKDF1.swift (43:35)",
+   "vul_id": "734ec5ddc1a81a14558cb5b5f8e28945",
+   "method": "return Digest.sha1(bytes)",
+   "column": 35,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PBKDF1.swift (43:35)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 4,
+   "cwe": "CWE-789",
+   "line": 87,
+   "class": "Scrypt.swift (87:9)",
+   "vul_id": "fc79e3991dcab6edb77bc0f2c9dd5fca",
+   "method": "barray.withUnsafeBytes { p in",
+   "column": 9,
+   "description": "Using this implementation of '.withUnsafeBytes' can lead to the compiler's decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/Scrypt.swift (87:9)",
+   "recomendation": "Whenever possible, avoid using buffers or memory pointers that do not have a valid size."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 26,
+   "class": "String+Extension.swift (26:17)",
+   "vul_id": "4b5bfab93a37ce5dcf150c14554c1cfe",
+   "method": "public func sha1() -\u003e String {",
+   "column": 17,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/String+Extension.swift (26:17)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5.9,
+   "cwe": "CWE-327",
+   "line": 27,
+   "class": "String+Extension.swift (27:22)",
+   "vul_id": "f657fc79b0dc5f1d22cb5e3ce0d1a1a6",
+   "method": "return bytes.sha1().toHexString()",
+   "column": 22,
+   "description": "SHA1 is a weak hash, which can generate repeated hashes.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/CryptoSwift/Sources/CryptoSwift/String+Extension.swift (27:22)",
+   "recomendation": "When it is necessary to store or transmit sensitive data, give preference to modern encryption algorithms and check frequently that the algorithm used has not become obsolete."
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 625,
+   "class": "Keychain.swift (625:26)",
+   "vul_id": "5f8d25c67fc05c53d7c01bd168944c6d",
+   "method": "status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)",
+   "column": 26,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (625:26)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 631,
+   "class": "Keychain.swift (631:22)",
+   "vul_id": "128a59b3647d0a5ae72465ba9f0cba81",
+   "method": "status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)",
+   "column": 22,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (631:22)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 645,
+   "class": "Keychain.swift (645:22)",
+   "vul_id": "dc5b8bde3d4b7569e4ee68203d45a69c",
+   "method": "status = SecItemAdd(attributes as CFDictionary, nil)",
+   "column": 22,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (645:22)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1593,
+   "class": "Keychain.swift (1593:25)",
+   "vul_id": "5db73e56d9569c07052c28ad84e3c8ff",
+   "method": "case String(kSecAttrAccessibleWhenUnlocked):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1593:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1595,
+   "class": "Keychain.swift (1595:25)",
+   "vul_id": "78c3d92f55f60f0e7a31cfa23c602df0",
+   "method": "case String(kSecAttrAccessibleAfterFirstUnlock):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1595:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1601,
+   "class": "Keychain.swift (1601:25)",
+   "vul_id": "e8e1db90f08aaa56c4a6e36db236ae11",
+   "method": "case String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1601:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1603,
+   "class": "Keychain.swift (1603:25)",
+   "vul_id": "a9c89e20678b1832ccd8729588e8ddba",
+   "method": "case String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1603:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1612,
+   "class": "Keychain.swift (1612:25)",
+   "vul_id": "f98be4ced40e8da5c4d7a0ab9d5361b8",
+   "method": "case String(kSecAttrAccessibleWhenUnlocked):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1612:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1614,
+   "class": "Keychain.swift (1614:25)",
+   "vul_id": "7ea6ae8e8409954cff37db54c647bff9",
+   "method": "case String(kSecAttrAccessibleAfterFirstUnlock):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1614:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1618,
+   "class": "Keychain.swift (1618:25)",
+   "vul_id": "c28685d7264238f844eb0c828e7ae319",
+   "method": "case String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1618:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1620,
+   "class": "Keychain.swift (1620:25)",
+   "vul_id": "9d7122987a52fe0570d3d4e391dd8c55",
+   "method": "case String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly):",
+   "column": 25,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1620:25)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1633,
+   "class": "Keychain.swift (1633:27)",
+   "vul_id": "f81d47d500ac2e8707348a52b28f6968",
+   "method": "return String(kSecAttrAccessibleWhenUnlocked)",
+   "column": 27,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1633:27)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1635,
+   "class": "Keychain.swift (1635:27)",
+   "vul_id": "faf7d8aed3bb4d17fa3607868463b24a",
+   "method": "return String(kSecAttrAccessibleAfterFirstUnlock)",
+   "column": 27,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1635:27)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1645,
+   "class": "Keychain.swift (1645:27)",
+   "vul_id": "e6ad76d68255951e764f0690c8f959be",
+   "method": "return String(kSecAttrAccessibleWhenUnlockedThisDeviceOnly)",
+   "column": 27,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1645:27)"
+  },
+  {
+   "cvss": 5,
+   "cwe": "CWE-695",
+   "line": 1647,
+   "class": "Keychain.swift (1647:27)",
+   "vul_id": "cd150e0e2e06fbf93f56e925abf10ae1",
+   "method": "return String(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly)",
+   "column": 27,
+   "description": "Local File I/O Operations.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/Pods/KeychainAccess/Lib/KeychainAccess/Keychain.swift (1647:27)"
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 22,
+   "class": "JSONHelpers.swift (22:16)",
+   "vul_id": "993ce2a6ee571200580047aa967d9bbb",
+   "method": "static let token = \"token\"",
+   "column": 16,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (22:16)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 23,
+   "class": "JSONHelpers.swift (23:16)",
+   "vul_id": "50a47e3116764099fda11a7fa0cdfee6",
+   "method": "static let passwd = \"passwd\"",
+   "column": 16,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (23:16)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 30,
+   "class": "JSONHelpers.swift (30:16)",
+   "vul_id": "cce1855df3318c211baad95720f5afca",
+   "method": "static let password = \"passwd\"",
+   "column": 16,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (30:16)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 45,
+   "class": "JSONHelpers.swift (45:20)",
+   "vul_id": "ed30aeb38df35e48cbfe41c4b003ecb1",
+   "method": "static let old_pass = \"old_pass\"",
+   "column": 20,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (45:20)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 7.4,
+   "cwe": "CWE-312",
+   "line": 46,
+   "class": "JSONHelpers.swift (46:20)",
+   "vul_id": "6994109ecb5e344ed41108aead08c884",
+   "method": "static let new_pass = \"new_pass\"",
+   "column": 20,
+   "description": "File contains sensitive information written directly, such as usernames, passwords, keys, etc.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/Helpers/JSONHelpers.swift (46:20)",
+   "recomendation": "Credentials must not be stored in the Git code or repository. There are ‘Secrets Management’ solutions that can be used to store secrets or use Pipeline resources."
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 44,
+   "class": "BankTransferVC3.swift (44:44)",
+   "vul_id": "44495e0044672de5ac3073d58e89d127",
+   "method": "if fileManager.fileExists(atPath: \"/Applications/Cydia.app\") ||",
+   "column": 44,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (44:44)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 54,
+   "class": "BankTransferVC3.swift (54:27)",
+   "vul_id": "5080a9c6f726660f67d50d56dfab2cf4",
+   "method": "if canOpen(path: \"/Applications/Cydia.app\") ||",
+   "column": 27,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (54:27)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 45,
+   "class": "BankTransferVC3.swift (45:45)",
+   "vul_id": "79d4ccb358de754c39a5f4882e9742e6",
+   "method": "fileManager.fileExists(atPath: \"/Library/MobileSubstrate/MobileSubstrate.dylib\") ||",
+   "column": 45,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (45:45)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 55,
+   "class": "BankTransferVC3.swift (55:28)",
+   "vul_id": "d84253d16566bd13896917298919b378",
+   "method": "canOpen(path: \"/Library/MobileSubstrate/MobileSubstrate.dylib\") ||",
+   "column": 28,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (55:28)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 47,
+   "class": "BankTransferVC3.swift (47:45)",
+   "vul_id": "ef224b1bac8164fbce7184e0070c845e",
+   "method": "fileManager.fileExists(atPath: \"/usr/sbin/sshd\") ||",
+   "column": 45,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (47:45)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 57,
+   "class": "BankTransferVC3.swift (57:28)",
+   "vul_id": "32885ec6654570367ce55bb9f9ed925e",
+   "method": "canOpen(path: \"/usr/sbin/sshd\") ||",
+   "column": 28,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (57:28)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 48,
+   "class": "BankTransferVC3.swift (48:45)",
+   "vul_id": "0792dd47aa3565a05a978ea7fa5a9b85",
+   "method": "fileManager.fileExists(atPath: \"/etc/apt\") ||",
+   "column": 45,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (48:45)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 58,
+   "class": "BankTransferVC3.swift (58:28)",
+   "vul_id": "e980e594e55ad5563f6b8c5f431eca99",
+   "method": "canOpen(path: \"/etc/apt\") ||",
+   "column": 28,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (58:28)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 32,
+   "class": "BankTransferVC3.swift (32:51)",
+   "vul_id": "aff048b4d1dabcbcd8d36498682723e9",
+   "method": "guard let cydiaUrlScheme = NSURL(string: \"cydia://package/lighttpd\") else { return false }",
+   "column": 51,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (32:51)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 50,
+   "class": "BankTransferVC3.swift (50:45)",
+   "vul_id": "bcd5a71ecfa9700e403fe9c036f73d2c",
+   "method": "fileManager.fileExists(atPath: \"/private/var/lib/apt\") {",
+   "column": 45,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (50:45)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 50,
+   "class": "BankTransferVC3.swift (50:53)",
+   "vul_id": "a6bd1f1b1bde3c3a56580cb34d85dc02",
+   "method": "fileManager.fileExists(atPath: \"/private/var/lib/apt\") {",
+   "column": 53,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Bank Transfer/BankTransferVC3.swift (50:53)"
+  },
+  {
+   "cvss": 9.8,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "SignupSuccessMessageController.swift (36:12)",
+   "vul_id": "0784871fccfdf08023ef3bb401a61aec",
+   "method": "UIPasteboard.general.string = id",
+   "column": 12,
+   "description": "The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.",
+   "classMessage": "UnSAFE_Bank/iOS/Source Code/damnVIA/ViewControllers/Pre-Login/SignupSuccessMessageController.swift (36:12)"
+  }
+ ],
+ "none": 11,
+ "low": 0,
+ "medium": 26,
+ "high": 97,
+ "critical": 1,
+ "total": 135,
+ "ios": {
+  "binName": "Pods",
+  "averageCvss": 9.8,
+  "securityScore": 2,
+  "size": "25860620 Bytes",
+  "numberOfLines": 292059
+ }
+}

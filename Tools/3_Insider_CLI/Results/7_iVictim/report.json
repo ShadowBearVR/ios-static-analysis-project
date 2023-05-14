@@ -1,0 +1,146 @@
+{
+ "libraries": [
+  {
+   "name": "RealmSwift",
+   "current": "latest",
+   "source": "CocoaPod"
+  },
+  {
+   "name": "Locksmith",
+   "current": "latest",
+   "source": "CocoaPod"
+  },
+  {
+   "name": "CryptoSwift",
+   "current": "latest",
+   "source": "CocoaPod"
+  }
+ ],
+ "vulnerabilities": [
+  {
+   "cvss": 7.5,
+   "cwe": "CWE-532",
+   "line": 81,
+   "class": "AppDelegate.swift (81:13)",
+   "vul_id": "338aae63a2a1f06e1f45f7b8fdcc1a1b",
+   "method": "NSLog(\"Unresolved error \\(wrappedError), \\(wrappedError.userInfo)\")",
+   "column": 13,
+   "description": "The binary can use the NSLog function for logging. Confidential information should never be recorded.",
+   "classMessage": "iVictim/iVictim/Application/AppDelegate.swift (81:13)",
+   "recomendation": "Prevent sensitive data from being logged into production."
+  },
+  {
+   "cvss": 7.5,
+   "cwe": "CWE-532",
+   "line": 106,
+   "class": "AppDelegate.swift (106:17)",
+   "vul_id": "2aca6d2556622435ddbd94354a548f23",
+   "method": "NSLog(\"Unresolved error \\(nserror), \\(nserror.userInfo)\")",
+   "column": 17,
+   "description": "The binary can use the NSLog function for logging. Confidential information should never be recorded.",
+   "classMessage": "iVictim/iVictim/Application/AppDelegate.swift (106:17)",
+   "recomendation": "Prevent sensitive data from being logged into production."
+  },
+  {
+   "cvss": 9.8,
+   "cwe": "CWE-200",
+   "line": 26,
+   "class": "PasteboardViewController.swift (26:31)",
+   "vul_id": "59f49dbe459e0a435047b8feb5fa52de",
+   "method": "let pasteboardItems = UIPasteboard.general.items",
+   "column": 31,
+   "description": "The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.",
+   "classMessage": "iVictim/iVictim/Modules/Main/Pasteboard/PasteboardViewController.swift (26:31)"
+  },
+  {
+   "cvss": 9.8,
+   "cwe": "CWE-200",
+   "line": 36,
+   "class": "PasteboardViewController.swift (36:9)",
+   "vul_id": "754c5a0eca93649ab15a01cf5dad083b",
+   "method": "UIPasteboard.general.items = []",
+   "column": 9,
+   "description": "The application copies data to the UIPasteboard. Confidential data must not be copied to the UIPasteboard, as other applications can access it.",
+   "classMessage": "iVictim/iVictim/Modules/Main/Pasteboard/PasteboardViewController.swift (36:9)"
+  },
+  {
+   "cvss": 8.8,
+   "cwe": "CWE-95",
+   "line": 46,
+   "class": "SafeWebViewController.swift (46:17)",
+   "vul_id": "393ccdda923479e40b60e581e721745e",
+   "method": "webView.loadHTMLString(textField.text!, baseURL: nil)",
+   "column": 17,
+   "description": "User input not sanitized in 'loadHTMLString' can result in an injection of JavaScript in the context of your application, allowing access to private data.",
+   "classMessage": "iVictim/iVictim/Modules/Main/Safe web view/SafeWebViewController.swift (46:17)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 48,
+   "class": "SecurityManager.m (48:60)",
+   "vul_id": "f75e015a0b330064103cc0da133467ec",
+   "method": "if ([[NSFileManager defaultManager] fileExistsAtPath:@\"/Applications/Cydia.app\"]){",
+   "column": 60,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "iVictim/iVictim/Modules/Main/SecurityManager.m (48:60)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 50,
+   "class": "SecurityManager.m (50:65)",
+   "vul_id": "41f940bcad9022f860f7cf2dff424293",
+   "method": "}else if([[NSFileManager defaultManager] fileExistsAtPath:@\"/Library/MobileSubstrate/MobileSubstrate.dylib\"]){",
+   "column": 65,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "iVictim/iVictim/Modules/Main/SecurityManager.m (50:65)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 54,
+   "class": "SecurityManager.m (54:65)",
+   "vul_id": "f064458d072a88cd67e12479bc957840",
+   "method": "}else if([[NSFileManager defaultManager] fileExistsAtPath:@\"/usr/sbin/sshd\"]){",
+   "column": 65,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "iVictim/iVictim/Modules/Main/SecurityManager.m (54:65)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 56,
+   "class": "SecurityManager.m (56:65)",
+   "vul_id": "6b4cd3dc2e9acf583c2fdda3f782748f",
+   "method": "}else if([[NSFileManager defaultManager] fileExistsAtPath:@\"/etc/apt\"]){",
+   "column": 65,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "iVictim/iVictim/Modules/Main/SecurityManager.m (56:65)"
+  },
+  {
+   "cvss": 0,
+   "cwe": "CWE-693",
+   "line": 71,
+   "class": "SecurityManager.m (71:77)",
+   "vul_id": "73519fa91a57ace32b52f2034c14f077",
+   "method": "if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@\"cydia://package/com.example.package\"]]){",
+   "column": 77,
+   "description": "The application may contain Jailbreak detection mechanisms.",
+   "classMessage": "iVictim/iVictim/Modules/Main/SecurityManager.m (71:77)"
+  }
+ ],
+ "none": 5,
+ "low": 0,
+ "medium": 0,
+ "high": 3,
+ "critical": 2,
+ "total": 10,
+ "ios": {
+  "binName": "iVictim",
+  "averageCvss": 9.8,
+  "securityScore": 2,
+  "size": "1252684 Bytes",
+  "numberOfLines": 7435
+ }
+}
